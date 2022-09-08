@@ -1,0 +1,117 @@
+#loginPage {
+        background-image: linear-gradient(to left, lightblue, darkblue);
+}
+
+#recordPage {
+        background-image: linear-gradient(to left, lightblue, darkblue);
+        font-family: "Arial";
+}
+
+
+.recordContainer {  
+width: 582px;  
+overflow: hidden;  
+margin: auto;
+/*margin: 200px 0 0 670px;*/
+margin-top: 70px;
+}  
+
+
+table, th, td {
+        border:1px solid black;
+}
+
+th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+th {
+color: white;
+background: black;
+}
+
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+.container {  
+width: 382px;  
+overflow: hidden;  
+margin: auto;
+/*margin: 200px 0 0 670px;*/
+margin-top: 70px;
+padding: 80px;  
+background: #E0FFFF;  
+border-radius: 15px ;  
+box-shadow: 20px 20px 50px grey;
+}  
+
+#name{  
+    width: 300px;  
+    height: 30px;    
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+
+#pass{  
+    width: 300px;  
+    height: 30px; 
+    border-radius: 3px;  
+    padding-left: 8px;  
+}
+
+#login-btn{
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    background-color: #00FFFF;
+}  
+#login-btn:hover {
+        background-color: lightblue;
+}
+
+.inputField {
+        background-color: white;
+}
+
+.inputField:hover {
+        border-color: red;
+}
+
+
+
+/*.great {
+        background: green;
+        font-family: "Comic Sans MS";
+
+ }
+
+.great:hover {
+        display: "Add text";
+    border-color: yellow;
+    padding: 10px;
+}*/
+
+
+#addNewBtn {
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    background-color: #90ee90;
+    color: white;
+}
+
+#deleteBtn {
+    width: 150px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    background-color: #EB212E;
+    color: white;
+}

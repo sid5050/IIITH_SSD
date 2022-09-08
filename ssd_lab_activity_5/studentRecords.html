@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body id="recordPage">
+    <div class="recordContainer">   
+      <h1>In student Records Page</h1>
+      <input id="rollno" type="text" placeholder="Enter Roll Number" name="rollno" required>  
+      <input id="usrname" type="text" placeholder="Enter Name" name="username" required>  
+      <button id="addNewBtn" type="submit" onclick="insertTableRow()">Add New</button>
+      <br /> <br />
+      <table id="recordTable">
+         <tr>
+            <th>Roll No.</th>
+            <th>Name</th>
+         </tr>
+      </table>
+      <br /> <br />
+      <button id="deleteBtn" type="submit" onclick="deleteTableRow()">Delete Last Entry</button>
+    </div>
+	<script>
+     function insertTableRow() {
+      const rollno = document.getElementById("rollno").value;
+      const usrname = document.getElementById("usrname").value;
+      // const rows = document.getElementById("recordTable").rows.length;
+      var table = document.getElementById("recordTable");
+      const numOfRows = table.rows.length;
+      var row = table.insertRow(numOfRows);
+      var col1 = row.insertCell(0);
+      var col2 = row.insertCell(1);
+      col1.innerHTML = rollno;
+      col2.innerHTML = usrname;
+      document.getElementById("rollno").value = "";
+      document.getElementById("usrname").value = "";
+    }
+
+    function deleteTableRow() {
+      const rows = document.getElementById("recordTable").rows.length;
+      if(rows == 1) return;
+      console.log(rows);
+      document.getElementById("recordTable").deleteRow(rows-1);
+    }
+  </script>
+  </body>
+</html>
