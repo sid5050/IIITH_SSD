@@ -1,0 +1,25 @@
+
+
+.wrapper {
+  margin-top: 30px;
+  border: 1px solid lightblue;
+  width: 30%;
+}
+
+ul {
+  padding:0;
+  margin:0;
+  flex-wrap: wrap;
+}
+
+li {
+  color: black;
+  padding:5px 0;
+  cursor: pointer;
+  list-style: none
+}
+
+li:hover {
+  background-color: lightblue;
+  color: white;
+}

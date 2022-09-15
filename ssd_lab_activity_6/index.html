@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body id="loginPage">
+    <div class="container">   
+      <h1 class="lbl">Team Form</h1> 
+      <form id="login">  
+        <label class="lbl">Manager Name : </label>
+        <input class="inputField" id="mgrname" type="text" required />  <label id="noname"></label>
+        <br /><br />
+        <label class="lbl">Group Email : </label>
+        <input class="inputField" id="email" type="text" required /> <label id="noemail"></label>
+        <br /><br />
+        <label class="lbl">Server Username : </label>  
+        <input class="inputField" id="servername" type="text" required /> <label id="noservername"></label>
+        <br /><br />
+        <label class="lbl">Server Password : </label>   
+        <input class="inputField" id="serverpass" type="password" required /> <label id="noserverpass"></label>
+        <br /><br />
+        <label class="lbl">Confirm Password : </label>   
+        <input class="inputField" id="confirmpass" type="password" required /> <label id="nopass"></label>
+        <br /><br />
+        <label class="lbl">Team Lead : </label>
+        <select id="teamlead">  
+          <option value = "1"> BMW</option>  
+          <option value = "2"> Mercedes</option>  
+          <option value = "3" selected="selected"> Audi</option>  
+          <option value = "4"> Skoda</option>  
+        </select>  
+        <br /><br />
+        <label class="lbl">Team Members: </label>
+        <div class="wrapper">
+          <ul>
+            <li>Steve</li>
+            <br />
+            <li>Tony</li>
+            <br />
+            <li>Bruce</li>
+            <br />
+            <li>Clint</li>
+            <br />
+            <li>Thor</li>
+            <br />
+            <li>Natasha</li>
+            <br />
+          </ul>
+      </div>
+        <br /><br />
+        <button id="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
